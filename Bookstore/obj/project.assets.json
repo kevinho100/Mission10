@@ -1199,11 +1199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kevin/Desktop/Mission10FINAL/Mission10books/Bookstore/Bookstore.csproj",
+      "projectUniqueName": "/Users/kevin/Desktop/Mission10FINAL/Mission10/Bookstore/Bookstore.csproj",
       "projectName": "Bookstore",
-      "projectPath": "/Users/kevin/Desktop/Mission10FINAL/Mission10books/Bookstore/Bookstore.csproj",
+      "projectPath": "/Users/kevin/Desktop/Mission10FINAL/Mission10/Bookstore/Bookstore.csproj",
       "packagesPath": "/Users/kevin/.nuget/packages/",
-      "outputPath": "/Users/kevin/Desktop/Mission10FINAL/Mission10books/Bookstore/obj/",
+      "outputPath": "/Users/kevin/Desktop/Mission10FINAL/Mission10/Bookstore/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kevin/.config/NuGet/NuGet.Config"

@@ -23,7 +23,7 @@
                     <td>@p.BookId</td>
                     <td>@p.Title</td>
 
-                    @*Outline buttons*@
+                    @*Outline buttons for details, edit, and delete*@
                     <td>
                         <NavLink class="btn btn-outline-primary" href="@GetDetailsUrl(p.BookId)"> Details </NavLink>
                     </td>
@@ -48,7 +48,7 @@
         }
     </tbody>
 </table>
-@*change the create*@ 
+@*change the create button*@ 
 <NavLink class="btn btn-success" href="/admin/books/create"> Create </NavLink>
 
 @code {
