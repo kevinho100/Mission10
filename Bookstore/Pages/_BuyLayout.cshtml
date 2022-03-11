@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    @*Changed the navbar*@
+    <div class="bg-primary text-white p-2">
+        <div class="container-fluid">
+            Bookstore
+        </div>
+     </div>
+        <div class="m-1 p-1">
+            @RenderBody()
+        </div>
+
+</body>
+</html>
