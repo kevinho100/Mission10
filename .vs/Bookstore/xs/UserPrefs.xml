@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.ItemProperties.Bookstore PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Bookstore/Pages/Admin/Books.razor">
     <Files>
-      <File FileName="Bookstore/Views/Account/Login.cshtml" Line="30" Column="64" />
-      <File FileName="Bookstore/Pages/Admin/Books.razor" Line="4" Column="1" />
+      <File FileName="Bookstore/Views/Account/Login.cshtml" Line="18" Column="52" />
+      <File FileName="Bookstore/Pages/Admin/Books.razor" Line="5" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
