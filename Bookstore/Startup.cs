@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Bookstore.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace Bookstore
 {
@@ -34,6 +35,12 @@ namespace Bookstore
             {
                 options.UseSqlite(Configuration["ConnectionStrings:BookDBConnection"]);
             });
+
+            services.AddDbContext<AppIdentityDBContext>(options =>
+               options.UseSqlite(Configuration["ConnectionStrings:IdentityConnection"]));
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppIdentityDBContext>();
 
             // Add repository 
             services.AddScoped<IBooksRepository, EFBooksRepository>();
@@ -65,10 +72,11 @@ namespace Bookstore
 
             //Corresponds to the wwwroot
             app.UseStaticFiles();
-
             app.UseSession();
-
             app.UseRouting();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
@@ -93,6 +101,8 @@ namespace Bookstore
                 endpoints.MapFallbackToPage("/admin/{*catchall}", "/Admin/Index");
 
             });
+
+            IdentitySeedData.EnsurePopulated(app);
         }
     }
 }

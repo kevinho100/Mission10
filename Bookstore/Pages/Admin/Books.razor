@@ -2,13 +2,15 @@
 @page "/admin"
 @inherits OwningComponentBase<IBooksRepository>
 
-<table class="table table-sm table-striped table-bordered">
+@*Color of the table is changed*@
+<table class="table-dark table-sm table-striped">
 
     <thead>
         <tr>
-            <th>Book ID</th>
-            <th>Book Name</th>
-            
+            @*size of the font is changed*@
+            <th style="color:white; font-size:20pt;">Book ID</th>
+            <th style="color:white; font-size:20pt;">Book Name</th>
+
         </tr>
     </thead>
 
@@ -47,8 +49,10 @@
             </tr>
         }
     </tbody>
+
 </table>
-@*change the create button*@ 
+<br />
+@*change the create button*@
 <NavLink class="btn btn-success" href="/admin/books/create"> Create </NavLink>
 
 @code {
